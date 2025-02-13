@@ -94,6 +94,19 @@ function playGame()
         
         playRound(humanSelection, computerSelection);
     }
+
+    if (humanScore > computerScore)
+    {
+        console.log(`You win with ${humanScore} points. The computer had ${computerScore} points.`);
+    }
+    else if (computerScore > humanScore)
+    {
+        console.log(`You lose with ${humanScore} points. The computer had ${computerScore} points.`);
+    }
+    else
+    {
+        console.log(`Tie. Both you and the computer had ${computerScore} points.`);
+    }
 }
 
 playGame();
